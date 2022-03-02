@@ -1,0 +1,148 @@
+.container {
+  position: absolute;
+  text-align: center;
+}
+
+.col {
+  display: flexbox;
+  margin: 20px 200px 0px 400px;
+  width: 700px;
+  height: auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.theme {
+  font-size: 40px;
+  color: rgb(45, 46, 46);
+  margin-left: 250px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.answer {
+  width: 500px;
+  margin: 20px 100px 0px 100px;
+  padding: 12px 60px 10px 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(165, 164, 164);
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+img {
+  position: relative;
+  width: 15px;
+  margin-left: 500px;
+  margin-bottom: 20px;
+}
+
+.active {
+  width: 500px;
+  margin: 20px 100px 0px 100px;
+  padding: 12px 60px 10px 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(248, 245, 245);
+  background-color: rgb(207, 207, 207);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+#imgX {
+  display: none;
+}
+
+p {
+  display: none;
+}
+
+.active #imgX {
+  display: block;
+}
+
+.active > p {
+  display: block;
+}
+
+.active .imgDown {
+  display: none;
+}
+
+@media (max-width: 1390px) {
+  .container {
+    position: center;
+  }
+
+  .col {
+    margin: 10px 50px 0px 200px;
+    width: 400px;
+  }
+
+  .theme {
+    color: rgb(45, 46, 46);
+    margin-left: 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    position: center;
+  }
+
+  .col {
+    margin: 5px 20px 0px 20px;
+    width: 200px;
+  }
+  .theme {
+    color: rgb(45, 46, 46);
+    margin-left: 270px;
+  }
+}
+
+@media (max-width: 946px) {
+  .container {
+    position: center;
+  }
+
+  .col {
+    margin: 0px 0px 0px 0px;
+    width: 50px;
+    padding: 0px;
+  }
+
+  .answer {
+    width: 400px;
+  }
+
+  .active {
+    width: 400px;
+  }
+
+  img {
+    margin-left: 400px;
+  }
+
+  .theme {
+    color: rgb(45, 46, 46);
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .answer {
+    width: 200px;
+  }
+
+  .active {
+    width: 200px;
+  }
+
+  img {
+    margin-left: 200px;
+  }
+
+  .theme {
+    margin-left: 150px;
+    font-size: 20px;
+  }
+}
